@@ -21,6 +21,16 @@ console.log(newUsers);
  */
 //Usiamo i nuovi metodi degli array foreach o filter.
 
+/* var elementiLimitati = Users.filter((index) => {
+    if(min <= User[index] && max >= index) {
+        return true;
+    }
+    return false;
+});
+
+console.log(elementiLimitati); */
 Users.forEach((element, index, array) => {
-    console.log(element, index, array);
-})
+    if (a <= index && b >= index){
+        console.log(element);
+    }
+});
