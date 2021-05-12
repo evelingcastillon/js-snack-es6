@@ -16,4 +16,19 @@ const bici = [
 //destructuring e template literal
 const [primabici, , ,quartabici , ,] = bici;
 
-console.log(primabici, quartabici);
+console.log(primabici.peso, quartabici.peso);
+
+let biciPesoInferiore = bici[0];
+console.log(biciPesoInferiore);
+
+for (let i = 0; i < bici.length; i++) {
+    const singolaBici = bici[i];
+    if(singolaBici.peso < biciPesoInferiore.peso) {
+        biciPesoInferiore = singolaBici
+    }
+    
+}
+console.log(biciPesoInferiore);
+/* 
+const{nome, peso} = bici;
+console.log(nome, peso); */
