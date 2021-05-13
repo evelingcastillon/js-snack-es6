@@ -14,6 +14,14 @@ const squadra = [
 ];
 
 //Generare numeri random al posto degli 0 nelle proprietà: Punti fatti e falli subiti.
+
+/**
+ * ##getRandomInt
+ * Ci restituisce un valore number random Intero compreso tra min e max
+ * @param {number} min - Valore minimo
+ * @param {number} max - Valore massimo
+ * @returns 
+ */
 function getRandomInt(min, max) {
     min = Math.ceil(min);
     max = Math.floor(max);
