@@ -29,6 +29,10 @@ for (var i = 0; i < squadra.length; i++){
 }
 
 //Infine usando la destrutturazione creiamo un nuovo array i cui elementi contengono solo nomi e falli subiti e stampiamo tutto in console.
+const squadranuova = [];
 
-const [{nome},,{falliSubiti}] = squadra;
-console.log(nome);
+squadra.forEach( squadrasingola =>{
+    const {nome, falliSubiti} = squadrasingola;
+    squadranuova.push({nome,falliSubiti})
+})
+console.log(squadranuova);
